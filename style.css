@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: monospace;
+    background-color: #111d4a;
+    
+}
+
+nav{
+    background: #92140c;
+    height: 80px;
+    width: 100%;
+    
+}
+
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #FFF;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h1{
+    color: white;
+}
+
+#css:hover{
+    color: #111d4a;
+    transition: 0.4s;
+}
+
+.LogoEmpresa{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+    
+
+
