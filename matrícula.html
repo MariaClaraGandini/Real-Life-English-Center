@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Real Life English Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="matricula.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Menu da Pagina -->
+    <nav>
+        <img src="realLife-logo (1).png" alt="Logo da Empresa" class="LogoEmpresa">
+        <ul>
+          <li><a href="index.html" id="css">Home</a></li>
+          <li><a href="sobre.html" id="css">Sobre</a></li>
+          <li><a href="contato.html" id="css">Contato</a></li>
+          <li><a href="quiz.html" id="css">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <h1>Matricule-se</h1>
+
+    <div class='container'>   
+      <form id="form">
+        <div class='box-form'>
+          <label>Informe seu nome completo</label>
+          <input id="name" type="text" class="form-control" placeholder="Ciclano da Silva"> <br>
+          <label>Informe a data do seu aniversário </label>
+          <input id="niver" type="text" class="form-control" placeholder="00/00/0000"><br>
+        </div>
+          <div class='box-form2'>
+            <p>Informe seu CPF (apenas números) <br> </p> 
+            <input id="cpf" type="text" class="form-control"placeholder="123.456.789-12" maxlength="11">  <br>
+            <label>Informe seu RG (apenas números) <br> </label> 
+            <input id="rg" type="number" class="form-control" placeholder="12.345.678-9"> <br>
+         </div>
+            <label>Informe seu E-Mail (apenas números) <br> </label> 
+            <input id="email" type="text" class="form-control" placeholder="ciclano@gmail.com"><br>
+            <label>Informe seu Endereço <br> </label> 
+            <input id="endereço" type="text" class="form-control" placeholder="Rua X ,123, Avenida Y"><br>
+         
+          <button id='enviar'>Enviar</button>
+      </form>
+    </div>
+    <div class="rodape">
+      <a href="https://www.facebook.com/reallifematao"><p class="Icon"><img src="facebook3.png" class="iconFacebook"></p></a>
+      <a href="https://www.instagram.com/real_life_english_center/"><p class="Icon"><img src="instagram3.png" class="iconInstagram"></p></a>
+      <p><img src="study2.gif" class="gif"></p>
+      <p class="IconCalendario"><img src="calendario.png" class="iconCalendario"></p>
+      <div class="containerCalendario">
+          <p class="txtTitleCalendario"><strong>HORÁRIOS DE FUNCIONAMENTO:</strong></p>
+          <ol class="List">
+              <li class="txtList">SEGUNDA A SEXTA DAS 8:00h AS 21:30h.</li>
+              <li class="txtList">SABADOS DAS 8:00h AS 15:00h.</li>
+          </ol>
+      </div>
+  </div>
+
+    <script>
+      function Onsubmit ()
+      {
+      alert ('Parabéns, sua matrícula foi feita com sucesso. Bons estudos!')
+      enviar.innerHTML= `'Parabéns, sua matrícula foi feita com sucesso. Bons estudos!`
+      }
+      form.addEventListener ('submit',Onsubmit)
+    </script>
+  </body>
+</html
