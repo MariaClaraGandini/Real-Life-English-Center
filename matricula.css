@@ -1,0 +1,164 @@
+
+*{
+    /* todos os elementos, sem excessões */
+    padding: 0px;
+    /* distância do elemento até suas bordas*/
+    margin: 0px;
+    box-sizing: border-box;    
+}
+body{
+    font-family: monospace;
+    background-color: rgb(247, 242, 242);    
+}
+nav{
+    background: #92140c;
+    height: 80px;
+    width: 100%;
+    /* margem entre uma caixinha e outra */    
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: #FFF;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
+h1{
+    background: white;
+    color: #92140c;
+    margin-left: 20px;
+    padding: 30px;   
+}
+.LogoEmpresa{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.box-form { 
+    padding: 7px 13px;
+    display:flex;
+    flex-direction: row;
+}
+
+.box-form2 {
+    display:flex; 
+    flex-direction: row;
+    padding: 7px 13px;
+
+}
+#name{
+    width: 200%;
+}
+
+#enviar{
+    padding: 5px;
+    border-radius:3px;
+    background-color:#92140c;
+    color: white;
+    padding: 3px;
+}
+.rodape{
+
+    width: 100%;
+    height: 300px;
+    background-color: #92140c;
+    position: absolute;
+    bottom: -200;
+    padding-bottom: 30px;
+    margin-top: 300px;
+    
+
+}
+
+.iconFacebook{
+    width: 48px;
+    height: 48px;
+}
+
+.iconInstagram{
+    width: 48px;
+    height: 48px;
+}
+
+.Icon{
+    float: left;
+    position: relative;
+    left: 610px;
+    margin-top: 80px;
+    padding: 10px
+}
+
+.gif{
+
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: -50px;
+}
+
+.IconCalendario{
+
+    position: relative;
+    margin-top: -192px;
+    margin-right: -0px;
+    right: 200px;
+}
+
+.iconCalendario{
+    width: 48px;
+    height: 48px;
+    margin-left: 1145px;
+}
+
+.containerCalendario{
+    height: 150px;
+    width: 310px;
+    margin-left: 960px;
+    text-align: center;
+    background-color: gainsboro;
+    border-radius: 10px;
+    -webkit-box-shadow: 9px 7px 5px rgba(85, 85, 85, 0.77);
+	-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+	box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+.txtTitleCalendario{
+    font-size: 20px;
+    color: #000;
+    
+}
+
+.List{
+    margin-top: 10px;
+}
+
+.txtList{
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 5px;
+}
+/*.line1{
+
+    width:500px;
+    /* tamanho do input 
+
+    display: inline;
+    float: inline-start;
+}
+
+ /*.line1{
+    display:flex;
+    flex-direction: row;
+
+}*/
+
