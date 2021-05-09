@@ -1,31 +1,132 @@
 <!DOCTYPE html>
 <html>
-        <head>
-            
-            <meta charset="UTF-8">
-            <title> Real Life English Center</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="style.css">
-        </head>
+  <head>
+    <meta charset="UTF-8">
+    <title> Real Life English Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/matricula.css">
+  </head>
+  <body>
+    <!-- Menu da Pagina -->
+    <nav>
+        <img src="img/realLife-logo (1).png" alt="Logo da Empresa" class="imgLogo">
+        <ul>
+          <li><a href="index.html" id="css">Home</a></li>
+          <li><a href="sobre.html" id="css">Sobre</a></li>
+          <li><a href="contato.html" id="css">Contato</a></li>
+          <li><a href="quiz.html" id="css">Quiz</a></li>
+        </ul>
+    </nav>
+   <div class='container'>   
+      <h1>Matricule-se</h1>
+      <form id="form">
+        <div>
+          <label>Nome Completo</label>
+          <input id="nome" class="fill" type="text" name="name" placeholder="Ciclano da Silva" > <br>
+        </div>
+        <div>
+          <label id= "label">Data de Nascimento </label>
+          <input id="birthday" class="fill" type="date" name="birthday "placeholder="00/00/0000" ><br>
+        </div>
+          <div class='conjunto'>
+            <label>Telefone<br> </p> 
+            <input type="tel" id="phone"class="fill" name="phone" placeholder="(00) 00000-0000" maxlength="15" >  <br>
+          </div>
+          <div class='conjunto2'>
+            <label>E-Mail <br> </label> 
+            <input id="email"class="fill" type="email" name="email" placeholder="ciclano@gmail.com" > <br>
+         </div>
+         <div>
+            <label>RG (apenas números) <br> </label> 
+            <input id="rg" class="fill"type="number" name="rg" placeholder="12.345.678-9"><br>
+         </div>
+         <div class= 'conjunto3'>
+          <label>CPF (apenas números)<br> </label> 
+          <input id="cpf" class="fill"type="number" name="cpf" placeholder="123.456.789-12" maxlength="11" > <br>
+       </div>
+          <div class= 'conjunto4'>
+            <label>Rua/Avenida <br> </label> 
+            <input id="road" class="fill" type="text" name="road" placeholder="Rua X ou Avenida Y"  ><br>
+          </div>
+          <div class= 'conjunto5'>
+            <label> Número<br> </label> 
+            <input id="numberhouse" class="fill" type="number" name="numberhouse" placeholder="123" ><br>
+          </div>
+          <div class= 'conjunto6'>
+            <label>Bairro <br> </label> 
+            <input id="district" class="fill" type="text" name="district" placeholder="Bairro ABC" ><br>
+          </div>
+          <div class = 'container2'>
+            <div id="field1">
+              <label class="selection"> Selecione o nível de inglês </label>
+              <select id="level" class="fill">
+              <option value="">- - - - -</option>
+              <option value="introduction" id="introduction">INTRODUÇÃO</option>
+              <option value="beginner">INICIANTE</option>
+              <option value="intermediary">INTERMEDIÁRIO</option>
+              <option value="advanced">AVANÇADO</option>
+              </select> 
+            </div>
+            <div id="field2">
+            <label class="selection turno"> Selecione o turno </label>
+            <select id="shift" class="fill" >
+            <option value="">- - - - -</option>
+            <option value="morning" id="morning">Matutino (Manhã)</option>
+            <option value="afternoon">Vespertino (Tarde)</option>
+            <option value="evening">Noturno (Noite)</option>
+          </select> 
+         </div>
+          <div id= "field3">
+        <label class="selection">  Aulas por Semana </label>
+        <select id="month" class="fill" >
+          <option value="">- - - - -</option>
+            <option value="morning" id="morning"> Uma vez por semana ( 2 horas)</option>
+            <option value="afternoon"> Duas vezes por semana (1 hora)</option>
+            <option value="evening">Noturno (Noite)</option>
+        </select>
+        </div>
+        <div id="field4">
+        <label class="labelhour"> Horário (Brasília)</label>
+        <select id="hour" class="fill">
+          <option value="">- - - - -</option>
+            <option value="morning" id="morning"> 08:00 as 10:00 </option>
+            <option value="afternoon"> 14:00 as 16:00</option>
+            <option value="evening">19:00 ás 21:00</option>
+        </select>
+      </div> 
+      </div>
+        <button type="submit" id="enviar">ENVIAR</button>
+        </form>
+        </div>
+      <div id="result"></div>
+  
+      <script>
+      function onSubmit(event) {
+        event.preventDefault()
 
-    <body>
+        let nome= document.getElementById("nome").value
+
+        if(!nome) {
+          alert ('olá ')
+          nome.className="negative";
+        }
+      }
+
+        addEventListener ('submit', onSubmit)
+        </script>
         
-        <!-- Menu da Pagina -->
-        <nav>
+    </div>
+      <div class="rodape"> 
+       <div class="Icon">
+          <a href="https://www.facebook.com/reallifematao" class="tranparent"><img src="img/facebook3.png" alt="Facebook" id="facebook"></a>
+       </div>
+       <div class="containerTxtRodape"> 
+        <p class="centralizarTxtRodape">AVENIDA SETE DE SETEMBRO, 519 - CENTRO <br> MATÃO-SP</p>
+       </div>
+       <div class="Icon">
+           <a href="https://www.instagram.com/real_life_english_center/" class="tranparent"><img src="img/instagram.png" alt="instagram" id ="instagram"></a>
+       </div>
+      </div>  
 
-            <img src="realLife-logo (1).png" alt="Logo da Empresa" class="LogoEmpresa">
-            <ul>
-                <li><a href="index.html" id="css">Home</a></li>
-                <li><a href="sobre.html" id="css">Sobre</a></li>
-                <li><a href="contato.html" id="css">Contato</a></li>
-                <li><a href="matricula.html" id="css">Matricula</a></li>
-                <li><a href="quiz.html" id="css">Quiz</a></li>
-            </ul>
-
-        </nav>
-
-        <h1>Matricula</h1>
-
-    </body>
-
+  </body>
 </html>
