@@ -206,8 +206,12 @@ input::placeholder{
 
 
 #email{
-    width: 178%;
+    width: 180%;
     height: 45px;
+}
+
+.conjunto2{
+    margin-left: -4px;
 }
 
 .conjunto3{
@@ -353,6 +357,4 @@ select{
 .tranparent:hover{
 background: transparent;
 }
-
-
 
