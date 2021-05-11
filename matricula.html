@@ -104,14 +104,75 @@
       function onSubmit(event) {
         event.preventDefault()
 
-        let nome= document.getElementById("nome").value
+        let nome= document.getElementById("nome")
 
-        if(!nome) {
-          alert ('olá ')
+        nome.className = ""
+        if(!nome.value) {
+          alert ('Por favor, preencha seu nome completo!')
           nome.className="negative";
+          return
         }
-      }
+        let birthday = document.getElementById("birthday")
+       
+        birthday.className = ""
 
+        if(!birthday.value) {
+          alert ('Por favor, preencha o seu aniversário!')
+          birthday.className="negative";
+          return
+        }
+
+        let phone = document.getElementById("phone")
+
+        phone.className = ""
+
+        if(!phone.value) {
+          alert ('Por favor, nos informe o seu telefone!')
+          phone.className="negative";
+          return
+      }
+      
+      let email = document.getElementById("email")
+
+      email.className = ""
+
+        if(!phone.value) {
+          alert ('Por favor, nos informe o seu e-mail!')
+          email.className="negative";
+          return
+    }
+     
+    let rg = document.getElementById("rg")
+
+    rg.className = ""
+
+     if(!rg.value) {
+    alert ('Por favor, digite o seu RG!')
+    rg.className="negative";
+    return
+}
+     
+    let cpf = document.getElementById("cpf")
+
+    email.className = ""
+
+      if(!cpf.value) {
+        alert ('Por favor, digite o seu CPF!')
+        cpf.className="negative";
+        return
+}
+     
+      let email = document.getElementById("email")
+
+      email.className = ""
+
+        if(!phone.value) {
+          alert ('Por favor, nos informe o seu e-mail!')
+          email.className="negative";
+          return
+}
+      
+  }
         addEventListener ('submit', onSubmit)
         </script>
         
