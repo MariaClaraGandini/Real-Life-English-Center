@@ -2,19 +2,25 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title> Real Life English Center</title>
+    <title>Matrícula | Real Life English Center</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/matricula.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="matricula.css">
+    <link rel="stylesheet" href="notifier.css">
   </head>
   <body>
     <!-- Menu da Pagina -->
     <nav>
-        <img src="img/realLife-logo (1).png" alt="Logo da Empresa" class="imgLogo">
+        <a href="index.html" class="transparentPageMatricula"><img src="./src/img/Logo.png" alt="Logo da Empresa" class="imgLogo"></a>
         <ul>
-          <li><a href="index.html" id="css">Home</a></li>
-          <li><a href="sobre.html" id="css">Sobre</a></li>
-          <li><a href="contato.html" id="css">Contato</a></li>
-          <li><a href="quiz.html" id="css">Quiz</a></li>
+          <li><a href="curso.html">Cursos</a></li>
+          <li><a href="intercambio.html">Intercâmbio</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="matricula.html" class="matricula">Matrícula</a></li>
+    <li><a href="contato.html">Contato</a></li>
         </ul>
     </nav>
    <div class='container'>   
@@ -38,11 +44,11 @@
          </div>
          <div>
             <label>RG (apenas números) <br> </label> 
-            <input id="rg" class="fill"type="number" name="rg" placeholder="12.345.678-9"><br>
+            <input id="rg" class="fill"type="number" name="rg" placeholder="12.345.678-9" maxlength="9" ><br>
          </div>
          <div class= 'conjunto3'>
           <label>CPF (apenas números)<br> </label> 
-          <input id="cpf" class="fill"type="number" name="cpf" placeholder="123.456.789-12" maxlength="11" > <br>
+          <input id="cpf" class="fill"type="number" name="cpf" placeholder="123.456.789-12"  maxlength="11"> <br>
        </div>
           <div class= 'conjunto4'>
             <label>Rua/Avenida <br> </label> 
@@ -54,46 +60,31 @@
           </div>
           <div class= 'conjunto6'>
             <label>Bairro <br> </label> 
-            <input id="district" class="fill" type="text" name="district" placeholder="Bairro ABC" ><br>
+            <input id="district" type="text" name="district" placeholder="Bairro ABC" ><br>
           </div>
           <div class = 'container2'>
             <div id="field1">
               <label class="selection"> Selecione o nível de inglês </label>
-              <select id="level" class="fill">
-              <option value="">- - - - -</option>
-              <option value="introduction" id="introduction">INTRODUÇÃO</option>
-              <option value="beginner">INICIANTE</option>
-              <option value="intermediary">INTERMEDIÁRIO</option>
-              <option value="advanced">AVANÇADO</option>
+              <select id="select1">
+                <option value="">- - - - -</option>
+                <option value="Introdução" id="introduction">INTRODUÇÃO</option>
+                <option value="Iniciante">INICIANTE</option>
+                <option value="Intermediario">INTERMEDIÁRIO</option>
+                <option value="Avançado">AVANÇADO</option>
               </select> 
             </div>
             <div id="field2">
-            <label class="selection turno"> Selecione o turno </label>
-            <select id="shift" class="fill" >
-            <option value="">- - - - -</option>
-            <option value="morning" id="morning">Matutino (Manhã)</option>
-            <option value="afternoon">Vespertino (Tarde)</option>
-            <option value="evening">Noturno (Noite)</option>
-          </select> 
+                    <label class="selection turno"> Selecione o turno, aulas por semana e horário </label>
+            <select id="select2" >
+                <option value="">- - - - -</option>
+                <option value="Manhã - Sabado">Matutino - Sábado das 08:00 às 10:00hrs</option>
+                <option value="Manhã - Segunda e Quarta-feira">Matutino - Segunda e Quarta-feira das 08:00 às 09:00hrs </option>
+                <option value="Tarde - Sexta-feira">Vespertino - Sexta-feira das 14:00hrs às 16:00hrs </option>
+                <option value="Tarde - Terça e Quinta">Vespertino - Terça e Quinta-feira das 14:00 às 15:00hrs  </option>
+                <option value="Noite - Terça-feira">Noturno - Terça-feira das 19:00 às 21:00hrs</option>
+                <option value="Noite - Quarta e Sexta-feira">Noturno - Quarta e Sexta-feira das 19:00 às 20:00hrs</option>
+          </select>
          </div>
-          <div id= "field3">
-        <label class="selection">  Aulas por Semana </label>
-        <select id="month" class="fill" >
-          <option value="">- - - - -</option>
-            <option value="morning" id="morning"> Uma vez por semana ( 2 horas)</option>
-            <option value="afternoon"> Duas vezes por semana (1 hora)</option>
-            <option value="evening">Noturno (Noite)</option>
-        </select>
-        </div>
-        <div id="field4">
-        <label class="labelhour"> Horário (Brasília)</label>
-        <select id="hour" class="fill">
-          <option value="">- - - - -</option>
-            <option value="morning" id="morning"> 08:00 as 10:00 </option>
-            <option value="afternoon"> 14:00 as 16:00</option>
-            <option value="evening">19:00 ás 21:00</option>
-        </select>
-      </div> 
       </div>
         <button type="submit" id="enviar">ENVIAR</button>
         </form>
@@ -101,93 +92,137 @@
       <div id="result"></div>
   
       <script>
-      function onSubmit(event) {
+      addEventListener ('submit', (event) =>  {
         event.preventDefault()
 
-        let nome= document.getElementById("nome")
+        const nome= document.getElementById("nome")
 
         nome.className = ""
         if(!nome.value) {
-          alert ('Por favor, preencha seu nome completo!')
+          notifier.show('Erro!', 'Por favor, preencha seu nome completo!', 'danger', './src/img/high_priority-48.png', 0);
           nome.className="negative";
+          nome.focus()
           return
         }
-        let birthday = document.getElementById("birthday")
+        const birthday = document.getElementById("birthday")
        
         birthday.className = ""
 
         if(!birthday.value) {
-          alert ('Por favor, preencha o seu aniversário!')
+          notifier.show('Erro!', 'Por favor, preencha sua data de nascimento!', 'danger', './src/img/high_priority-48.png', 0);
           birthday.className="negative";
+          birthday.focus()
           return
         }
 
-        let phone = document.getElementById("phone")
+       const phone = document.getElementById("phone")
 
         phone.className = ""
 
         if(!phone.value) {
-          alert ('Por favor, nos informe o seu telefone!')
+          notifier.show('Erro!', 'Por favor, Informe seu telefone!', 'danger', './src/img/high_priority-48.png', 0);
           phone.className="negative";
+          phone.focus()
           return
       }
       
-      let email = document.getElementById("email")
+        const email = document.getElementById("email")
 
-      email.className = ""
+        email.className = ""
 
-        if(!phone.value) {
-          alert ('Por favor, nos informe o seu e-mail!')
+        if(!email.value) {
+          notifier.show('Erro!', 'Por favor, informe-nos seu email!', 'danger', './src/img/high_priority-48.png', 0);
           email.className="negative";
+          email.focus()
           return
     }
      
-    let rg = document.getElementById("rg")
+        const rg = document.getElementById("rg")
 
-    rg.className = ""
+        rg.className = ""
 
-     if(!rg.value) {
-    alert ('Por favor, digite o seu RG!')
-    rg.className="negative";
-    return
-}
-     
-    let cpf = document.getElementById("cpf")
-
-    email.className = ""
-
-      if(!cpf.value) {
-        alert ('Por favor, digite o seu CPF!')
-        cpf.className="negative";
+        if(!rg.value) {
+          notifier.show('Erro!', 'Por favor, informe o seu RG!', 'danger', './src/img/high_priority-48.png', 0);
+        rg.className="negative";
+        rg.focus()
         return
-}
+    }
      
-      let email = document.getElementById("email")
+        const cpf = document.getElementById("cpf")
 
-      email.className = ""
+        cpf.className = ""
 
-        if(!phone.value) {
-          alert ('Por favor, nos informe o seu e-mail!')
-          email.className="negative";
-          return
-}
-      
-  }
-        addEventListener ('submit', onSubmit)
+          if(!cpf.value) {
+            notifier.show('Erro!', 'Por favor, informe o seu CPF!', 'danger', './src/img/high_priority-48.png', 0);
+            cpf.className="negative";
+            cpf.focus()
+            return
+    }
+     
+          const road = document.getElementById("road")
+
+          road.className = ""
+
+            if(!road.value) {
+              notifier.show('Erro!', 'Por favor, informe seu endereço!', 'danger', './src/img/high_priority-48.png', 0);
+              road.className="negative";
+              road.focus()
+              return
+            }
+
+          const numberhouse = document.getElementById("numberhouse")
+
+          numberhouse.className = ""
+
+            if(!numberhouse.value) {
+              notifier.show('Erro!', 'Por favor, preencha o numero da sua residencia!', 'danger', './src/img/high_priority-48.png', 0);
+              numberhouse.className="negative";
+              numberhouse.focus()
+              return
+    }
+          const select1 = document.getElementById("select1")
+
+          select1.className = ""
+
+            if(!select1.value) {
+              notifier.show('Erro!', 'Por favor, selecione o nivel de inglês!', 'danger', './src/img/high_priority-48.png', 0);
+              select1.className="negative";
+              select1.focus()
+              return
+            }
+            const select2 = document.getElementById("select2")
+
+          select2.className = ""
+
+            if(!select2.value) {
+              notifier.show('Erro!', 'Por favor, selecione o turno!', 'danger', './src/img/high_priority-48.png', 0);
+              select2.className="negative";
+              select2.focus()
+              return
+              select2.className = ""
+
+            }
+            
+            else{
+              
+              notifier.show('Parabéns!', `Você foi matriculado no nivel ${select1.value} no turno ${select2.value}`, 'success', './src/img/ok-48.png', 0);
+           
+            }
+  })
         </script>
         
     </div>
       <div class="rodape"> 
        <div class="Icon">
-          <a href="https://www.facebook.com/reallifematao" class="tranparent"><img src="img/facebook3.png" alt="Facebook" id="facebook"></a>
+          <a href="https://www.facebook.com/reallifematao" class="tranparent"><img src="./src/img/facebook.png" alt="Facebook" id="facebook" class="sizeIcon sizeIconTransform"></a>
        </div>
        <div class="containerTxtRodape"> 
         <p class="centralizarTxtRodape">AVENIDA SETE DE SETEMBRO, 519 - CENTRO <br> MATÃO-SP</p>
        </div>
        <div class="Icon">
-           <a href="https://www.instagram.com/real_life_english_center/" class="tranparent"><img src="img/instagram.png" alt="instagram" id ="instagram"></a>
+           <a href="https://www.instagram.com/real_life_english_center/" class="tranparent"><img src="./src/img/instagram.png" alt="instagram" id ="instagram" class="sizeIcon sizeIconTransform"></a>
        </div>
       </div>  
-
+      <script src="notifier.js"></script>
   </body>
 </html>
